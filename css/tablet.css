@@ -1,0 +1,103 @@
+
+/* Tablet: 768px to 1399px */
+@media (min-width: 768px) and (max-width: 1399.98px) {
+
+  /* Hide profile image */
+  .navigation > a.profile-slot {
+    display: none;
+  }
+
+  /* Navbar stays horizontal */
+  .navigation {
+    flex-direction: row;
+    justify-content: center;
+    height: 64px;
+    padding: 0 24px;
+  }
+
+  .navigation > a {
+    height: 64px;
+    padding: 0 12px;
+  }
+
+  /* About: 2 columns */
+  .job-goal,
+  .personal-info {
+    padding: 40px;
+  }
+
+  /* Resume: 2 columns */
+  .resume-layout {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .resume-column {
+    display: flex;
+    width: 50%;
+  }
+
+  .resume .hobby-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Certificates: 2 columns */
+  .certificates {
+    padding: 40px 30px;
+  }
+
+  .certificate-items {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .certificates img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .certificate-content {
+    width: 100%;
+  }
+
+  #certificate-1,
+  #certificate-2 {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d6c08d;
+  }
+
+  #certificate-1::after {
+    height: 100%;
+  }
+
+  #certificate-3 {
+    padding-top: 20px;
+  }
+
+  /* Projects: 3 cards */
+  .projects {
+    padding: 25px 12px;
+  }
+
+  .project-image {
+    height: 150px;
+  }
+
+  .project-title,
+  .project-meta {
+    padding: 10px 12px;
+  }
+
+  .project-details td {
+    padding: 10px;
+  }
+
+  /* Show buttons on tablet */
+  .resume-card .view-more {
+    display: inline-block;
+  }
+
+}

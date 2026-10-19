@@ -1,0 +1,145 @@
+
+/* Mobile: below 768px */
+@media (max-width: 767.98px) {
+
+  /* Navbar */
+  .navigation {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 14px 24px;
+    gap: 0;
+  }
+
+  .navigation > a.profile-slot {
+    display: none;
+  }
+
+  .navigation > a {
+    flex: none;
+    width: 100%;
+    min-height: 42px;
+    padding: 8px 0;
+    justify-content: flex-start;
+    border: none;
+  }
+
+  .navigation > a:last-child {
+    border: none;
+  }
+
+  /* About: 1 column */
+  .job-goal,
+  .personal-info {
+    padding: 28px 22px;
+  }
+
+  /* Resume: 1 column */
+  .resume {
+    width: 100%;
+    padding: 24px 16px;
+  }
+
+  .resume-layout {
+    row-gap: 24px;
+  }
+
+  .resume-column {
+    width: 100%;
+  }
+
+  .resume-card {
+    padding: 24px 18px;
+  }
+
+  .resume .card-header h2 {
+    font-size: 23px;
+  }
+
+  .resume .hobby-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Certificates: 1 column */
+  .certificates {
+    padding: 30px 16px;
+  }
+
+  .certificate-items {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .certificates img {
+    display: block;
+    width: 90%;
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  #certificate-1,
+  #certificate-2 {
+    padding: 0 12px 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d6c08d;
+  }
+
+  #certificate-1::after {
+    display: none;
+  }
+
+  #certificate-3 {
+    padding: 0 12px;
+  }
+
+  /* Projects: 1 column */
+  .projects {
+    padding: 28px 16px;
+  }
+
+  .project-card {
+    flex-basis: auto;
+    width: 100%;
+  }
+
+  .project-image {
+    height: auto;
+    aspect-ratio: 2.4 / 1;
+    object-fit: cover;
+  }
+
+  .project-title {
+    padding: 10px 16px;
+  }
+
+  .project-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .project-details td {
+    padding: 10px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 24px 12px;
+  }
+
+  .footer-item span {
+    font-size: 13px;
+  }
+
+  .footer-item i {
+    font-size: 26px;
+  }
+
+  /* Show buttons on mobile */
+  .resume-card .view-more {
+    display: inline-block;
+  }
+
+}
